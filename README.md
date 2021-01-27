@@ -4,13 +4,18 @@
 
 > AngularJS service(s) for browser detection. Digest friendly.
 
+## WARNING: This code is not maintained
+
+Very obvious - but due - WARNING. Back in 2004 my team at [EF Class](https://class.ef.com/) was embarking in the great adventure of Open Source, making components like this one available to everyone. Time flies, the world revolves, yada yada. Good memories!
+
+**Tip:** you should [avoid user agent detection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent#avoiding_user_agent_detection) :-). We knew it weel back then! This exercise - including its 300+ real world UA strings tests - proved the point that UA detection has severe limitations, and you should do feature detection instead.
+
 Patterns were taken from https://github.com/g13n/ua.js/blob/master/src/ua.js but implementation was optimized for minimal
 foot-print and overhead:
 - RegExps are created only if invoked
 - Results cached, only detects once
 
-Unit tests cover 300+ real world UA strings. This exercise proves the point that UA detection has severe limitations
-and you should do feature detection instead.
+
 
 ## Getting Started
 
